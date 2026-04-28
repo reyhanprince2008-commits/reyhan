@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhamad raihan — Creative Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Playfair Display (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo / Brand -->
+      <a href="#home" class="nav-logo">Rey<span class="logo-dot">.</span></a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home"    class="nav-link active">Home</a></li>
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Toggle + Hamburger -->
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="toggle-icon">☀</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section class="hero" id="home">
+    <!-- Decorative background orbs -->
+    <div class="hero-orb orb-1"></div>
+    <div class="hero-orb orb-2"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal-up">👋 Hello, It's Me</p>
+      <h1 class="hero-name reveal-up delay-1">Muhamad Raihan</h1>
+      <div class="hero-image">
+            <div class="image-border">
+                <img src="rehan.jpeg" alt="Muhamad Raihan">
+            </div>
+        </div>
+
+      <!-- Typing effect container -->
+      <div class="hero-typing reveal-up delay-2">
+        <span class="typing-prefix">I build </span>
+        <span class="typing-text" id="typingText"></span>
+        <span class="typing-cursor">|</span>
+      </div>
+
+      <p class="hero-desc reveal-up delay-3">
+        An HTML, CSS, and JavaScript developer specializing in gaming websites, passionate about creating fast, beautiful, and rewarding digital experiences.</p>
+
+      <!-- Call-to-action buttons -->
+      <div class="hero-cta reveal-up delay-4">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact"  class="btn btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section class="about section" id="about">
+    <div class="container">
+
+      <!-- Section label -->
+      <span class="section-label reveal-up">About Me</span>
+
+      <div class="about-grid">
+        <!-- Image column -->
+        <div class="about-image-wrap reveal-left">
+          <div class="about-image">
+            <!-- Avatar placeholder with initials -->
+            <div class="avatar-placeholder">rey</div>
+            <!-- Decorative frame -->
+            <div class="image-frame"></div>
+          </div>
+          <!-- Floating stat cards -->
+          <div class="stat-card stat-card--1 reveal-up delay-2">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat-card stat-card--2 reveal-up delay-3">
+            <span class="stat-number">40+</span>
+            <span class="stat-label">Projects Done</span>
+          </div>
+        </div>
+
+        <!-- Text column -->
+        <div class="about-text reveal-right">
+          <h2 class="section-title">
+            Crafting digital<br /><em>experiences</em> that matter
+          </h2>
+          <p class="about-body">
+            Raihan adalah siswa SMKN 1 Pagelaran dari jurusan Teknik Jaringan dan Komputer yang memiliki semangat untuk menciptakan pengalaman digital yang bermakna. Dengan bekal pengetahuan di bidang teknologi, Raihan berfokus pada pengembangan solusi digital yang tidak hanya berfungsi dengan baik, tetapi juga memberikan kenyamanan dan nilai bagi penggunanya. Ia percaya bahwa setiap karya digital harus mampu mempermudah kehidupan sekaligus menghadirkan kesan yang berkesan.
+          </p>
+          <p class="about-body">
+           Ketika saya tidak sedang mengolah piksel atau men-debug API, saya sedang menjelajahi
+seni generatif, berkontribusi pada open-source, atau menyeduh secangkir kopi yang enak.
+          </p>
+
+          <!-- Skill tags -->
+          <div class="skills-wrap">
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+            <span class="skill-tag">Node.js</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">TypeScript</span>
+          </div>
+
+          <a href="#contact" class="btn btn-primary mt-24">Work With Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS SECTION
+  ============================================================ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+
+      <span class="section-label reveal-up">Selected Work</span>
+      <h2 class="section-title text-center reveal-up delay-1">
+        Projects I'm Proud Of
+      </h2>
+      <p class="section-sub reveal-up delay-2">
+        A curated selection of recent work spanning web apps, design systems, and more.
+      </p>
+
+      <!-- Project Cards Grid -->
+      <div class="projects-grid">
+
+        <!-- Card 1 -->
+        <article class="project-card reveal-up delay-1">
+          <div class="card-visual card-visual--1">
+            <div class="card-visual-inner">
+              <div class="mock-browser">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+              <div class="mock-screen">
+                <img src="gamesaya.jpg" alt="NexaBoard Screenshot" class="project-img">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">Web App</span>
+              <span class="card-tag">2026</span>
+            </div>
+            <h3 class="card-title">All Game</h3>
+            <p class="card-desc">
+              This website is for those of you who are confused about choosing an Android game, here are my suggestions.
+
+            </p>
+            <div class="card-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://allgamerey.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Open Web</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="project-card reveal-up delay-2">
+          <div class="card-visual card-visual--2">
+            <div class="card-visual-inner">
+              <div class="mock-browser">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                 <img src="belajar.png" alt="NexaBoard Screenshot" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">E-Commerce</span>
+              <span class="card-tag">2026</span>
+            </div>
+            <h3 class="card-title">Belajar Programer</h3>
+            <p class="card-desc">
+             You can learn programming on the website that I created.
+            </p>
+            <div class="card-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="card-actions">
+             <a href="https://belajar-programer.vercel.app/" target="_blank" class="btn btn-sm btn-primary">Open Web</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="project-card reveal-up delay-3">
+          <div class="card-visual card-visual--3">
+            <div class="card-visual-inner">
+              <div class="mock-browser">
+                <div class="mock-bar"><span></span><span></span><span></span></div>
+                <img src="store.jpg" alt="NexaBoard Screenshot" class="project-img">
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span class="card-tag">diamond</span>
+              <span class="card-tag">2025</span>
+            </div>
+            <h3 class="card-title">Top UP Game</h3>
+            <p class="card-desc">
+             I have created a top up game gimmick website, because this is a gimmick, so don't believe it too much.
+            </p>
+            <div class="card-stack">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="card-actions">
+              <a href="https://storerey.netlify.app/" target="_blank" class="btn btn-sm btn-primary">Open Web</a>
+              <a href="#" class="btn btn-sm btn-ghost">GitHub →</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- end projects-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+
+      <span class="section-label reveal-up">Get In Touch</span>
+      <h2 class="section-title text-center reveal-up delay-1">
+        Let's Build Something<br /><em>Together</em>
+      </h2>
+      <p class="section-sub reveal-up delay-2">
+        Have a project in mind? I'm open to freelance, full-time, and
+        collaboration opportunities. Drop me a message!
+      </p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap reveal-left">
+          <div class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="drs. reyhan" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="rehan@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" placeholder="Project Inquiry" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-full" id="sendBtn" type="button">
+              Send Message ✉
+            </button>
+            <!-- Success message (hidden by default) -->
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you within 24 hours.
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info + Social -->
+        <div class="contact-info reveal-right">
+          <div class="info-block">
+            <h3 class="info-title">Contact Info</h3>
+            <div class="info-item">
+              <span class="info-icon">📧</span>
+              <div>
+                <p class="info-label">Email</p>
+                <a href="mailto:reyhanprince2008@gmail.com" class="info-value">reyhanprince2008@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">📍</span>
+              <div>
+                <p class="info-label">Location</p>
+                <p class="info-value">Pagelaran, Indonesia</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <span class="info-icon">🟢</span>
+              <div>
+                <p class="info-label">Availability</p>
+                <p class="info-value">Open to opportunities</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Links -->
+          <div class="social-block">
+            <h3 class="info-title">Follow Me</h3>
+         <div class="social-links">
+    <a href="https://instagram.com/areyhan_mhmd" class="social-link">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+    </a>
+
+    <a href="https://tiktok.com/@areyhan_18" class="social-link">
+        <i class="fab fa-tiktok"></i>
+        <span>Tiktok</span>
+    </a>
+
+    <a href="https://wa.me/6283832142155" class="social-link">
+        <i class="fab fa-whatsapp"></i>
+        <span>Whatsapp</span>
+    </a>
+</div>
+      </div><!-- end contact-grid -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand">Muhamad Raihan<span class="logo-dot">.</span></p>
+        <p class="footer-copy">
+          © 2026 Muhamad Raihan. Crafted with ♥ in Pagelaran.
+        </p>
+        <a href="#home" class="footer-top" aria-label="Back to top">↑</a>
+      </div>
+    </div>
+  </footer>
+  
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+  
+</body>
+</html>
